@@ -48,6 +48,16 @@ public:
         int x;
         cout << "Masukkan nilai untuk disisipkan: ";
         cin >> x;
+
+        // Langkah 1: Buat node baru
+        Node *newNode = new Node(x);
+
+        // Langkah 2 & 3 sudah ditangani oleh constructor Node
+
+        // Langkah 4: Cari posisi yang tepat untuk node baru
+        Node *parent = nullptr;
+        Node *currentNode = nullptr;
+        search(x, parent, currentNode);
     }
 
 };
