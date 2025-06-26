@@ -27,7 +27,7 @@ public:
     {
         ROOT = nullptr; // Inisialisasi ROOT ke null saat tree pertama kali dibuat
     }
-    
+
     // Fungsi untuk mencari sebuah elemen.
     void search(int element, Node *&parent, Node *&currentNode)
     {
@@ -42,4 +42,12 @@ public:
                 currentNode = currentNode->rightchild;
         }
     }
+    // Fungsi untuk menyisipkan node baru ke dalam tree
+    void insert()
+    {
+        int x;
+        cout << "Masukkan nilai untuk disisipkan: ";
+        cin >> x;
+    }
+
 };
