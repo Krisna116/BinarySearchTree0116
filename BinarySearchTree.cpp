@@ -154,6 +154,20 @@ int main()
             tree.insert();
             break;
         }
+        case '2':
+        {
+            if (tree.isEmpty())
+            {
+                cout << "Tree masih kosong." << endl;
+            }
+            else
+            {
+                cout << "Inorder Traversal: ";
+                tree.inorder(tree.ROOT);
+                cout << endl;
+            }
+            break;
+        }
         }
     }
 }
