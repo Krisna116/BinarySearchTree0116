@@ -117,4 +117,16 @@ public:
         preorder(ptr->leftchild);
         preorder(ptr->rightchild);
     }
+
+    // Traversal Postorder (Kiri - Kanan - Root)
+    void postorder(Node *ptr)
+    {
+        if (ptr == nullptr)
+            return; // Basis rekursi
+
+        postorder(ptr->leftchild);
+        postorder(ptr->rightchild);
+        cout << ptr->info << " ";
+    }
+
 };
