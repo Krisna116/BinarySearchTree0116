@@ -168,6 +168,20 @@ int main()
             }
             break;
         }
+        case '3':
+        {
+            if (tree.isEmpty())
+            {
+                cout << "Tree masih kosong." << endl;
+            }
+            else
+            {
+                cout << "Preorder Traversal: ";
+                tree.preorder(tree.ROOT);
+                cout << endl;
+            }
+            break;
+        }
         }
     }
 }
