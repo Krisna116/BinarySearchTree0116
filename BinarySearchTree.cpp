@@ -95,4 +95,15 @@ public:
     {
         return ROOT == nullptr;
     }
+
+    // Traversal Inorder (Kiri - Root - Kanan)
+    void inorder(Node *ptr)
+    {
+        if (ptr == nullptr)
+            return; // Basis rekursi
+
+        inorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        inorder(ptr->rightchild);
+    }
 };
