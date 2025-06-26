@@ -106,4 +106,15 @@ public:
         cout << ptr->info << " ";
         inorder(ptr->rightchild);
     }
+
+    // Traversal Preorder (Root - Kiri - Kanan)
+    void preorder(Node *ptr)
+    {
+        if (ptr == nullptr)
+            return; // Basis rekursi
+
+        cout << ptr->info << " ";
+        preorder(ptr->leftchild);
+        preorder(ptr->rightchild);
+    }
 };
