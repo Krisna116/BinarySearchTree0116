@@ -89,5 +89,10 @@ public:
         }
         cout << "Nilai " << x << " berhasil disisipkan." << endl;
     }
-
+    
+    // Fungsi untuk memeriksa apakah tree kosong
+    bool isEmpty()
+    {
+        return ROOT == nullptr;
+    }
 };
