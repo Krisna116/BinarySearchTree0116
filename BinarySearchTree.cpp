@@ -58,6 +58,14 @@ public:
         Node *parent = nullptr;
         Node *currentNode = nullptr;
         search(x, parent, currentNode);
+
+        // Jika currentNode tidak null
+        if (currentNode != nullptr)
+        {
+            cout << "Nilai " << x << " sudah ada di dalam tree." << endl;
+            delete newNode; // Hapus node yang tidak jadi dipakai
+            return;
+        }
     }
 
 };
