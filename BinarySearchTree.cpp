@@ -130,3 +130,21 @@ public:
     }
 
 };
+int main()
+{
+    BinaryTree tree;
+    while (true)
+    {
+        cout << "\n--- MENU BINARY SEARCH TREE ---" << endl;
+        cout << "1. Sisipkan Node Baru" << endl;
+        cout << "2. Tampilkan Inorder Traversal" << endl;
+        cout << "3. Tampilkan Preorder Traversal" << endl;
+        cout << "4. Tampilkan Postorder Traversal" << endl;
+        cout << "5. Keluar" << endl;
+        cout << "\nMasukkan pilihan Anda (1-5): ";
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+    }
+}
