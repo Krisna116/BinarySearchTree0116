@@ -196,6 +196,13 @@ int main()
             }
             break;
         }
+        case '5':
+            return 0;
+        default:
+        {
+            cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
+            break;
+        }
         }
     }
 }
