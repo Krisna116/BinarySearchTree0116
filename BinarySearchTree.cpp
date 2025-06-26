@@ -66,6 +66,28 @@ public:
             delete newNode; // Hapus node yang tidak jadi dipakai
             return;
         }
+
+        // Langkah 5: Jika tree masih kosong (parent adalah null)
+        if (parent == nullptr)
+        {
+            // Jadikan newNode sebagai ROOT
+            ROOT = newNode;
+            cout << "Nilai " << x << " berhasil disisipkan sebagai ROOT." << endl;
+            return;
+        }
+
+        // Langkah 6 & 7: Tentukan apakah newNode akan menjadi anak kiri atau kanan dari parent
+        if (x < parent->info)
+        {
+            // Jadikan newNode sebagai anak kiri dari parent
+            parent->leftchild = newNode;
+        }
+        else
+        {
+            // Jadikan newNode sebagai anak kanan dari parent
+            parent->rightchild = newNode;
+        }
+        cout << "Nilai " << x << " berhasil disisipkan." << endl;
     }
 
 };
