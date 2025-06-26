@@ -182,6 +182,20 @@ int main()
             }
             break;
         }
+        case '4':
+        {
+            if (tree.isEmpty())
+            {
+                cout << "Tree masih kosong." << endl;
+            }
+            else
+            {
+                cout << "Postorder Traversal: ";
+                tree.postorder(tree.ROOT);
+                cout << endl;
+            }
+            break;
+        }
         }
     }
 }
